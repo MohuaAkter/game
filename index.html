@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class #22</title>
+    <!-- Google Font (Poppins) for clean typography -->
+     <link rel="preconnect" href="https://fonts.googleapis.com" />
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+     <link
+     href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&dispay=swap"
+     rel="stylesheet"
+     />
+     <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <div class="wrapper">
+       <div class="game-box frist-box" id="startScreen">
+        <h1 class="title">wanna play game?</h1>
+        <input
+        type="text"
+        class="name-input"
+        id="nameInput"
+        placeholder="Enter your name"
+        />
+        <button class="start-btn" id="startGameBtn">Start Game</button>
+        <div class="error-msg" id="errorMsg"hidden>Name Is Missing</div>
+       </div>
+       
+      <div class="game-box second-box" id="playerOneScreen" hidden>
+        <h1 class="title player-name" id="playerOneTitle">Player - 1</h1>
+       <input 
+       type="number"
+        class="name-input"
+         id="numberInput"
+         placeholder="Give a number"
+         />
+        
+        <button class="play-btn" id="letsPlayBtn">Let's play</button>
+        <div class="error-msg number-error" id="errorNumberOne" hidden>Please give a number</div>
+       </div>
+    </div>
+    
+    <script src="js/script.js"></script>
+ </body>
+</html>
